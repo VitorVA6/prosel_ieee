@@ -43,4 +43,4 @@ clf = DecisionTreeClassifier()
 #Treinando o classificador com o conjunto de treino
 clf.fit(x_train, y_train)
 #Testando e medindo acurácia com o conjunto de teste
-print(clf.score(x_test, y_test))
+print(f'Acurácia: {clf.score(x_test, y_test)}')
