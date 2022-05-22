@@ -4,12 +4,12 @@ from matplotlib import pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 
-#criando o dataser
+#criando o dataset
 dados = pd.read_csv('https://gist.githubusercontent.com/guilhermesilveira/1b7d5475863c15f484ac495bd70975cf/raw/16aff7a0aee67e7c100a2a48b676a2d2d142f646/projects.csv')
 #convertendo de pandas pra um array numpy
 dados = dados.to_numpy()
 
-#função que sepata os dados em 2 arrays, um para trabalhos finalizados e outro para não finalizados e em seguida os plota em cores diferentes
+#função que separa os dados em 2 arrays, um para trabalhos finalizados e outro para não finalizados e em seguida os plota em cores diferentes
 def plot_data(dados_x, dados_y):
     arr_filter = []
     for elem in dados_y:
